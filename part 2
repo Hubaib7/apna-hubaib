@@ -1,0 +1,735 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNSAg1HQJhT/zhrbZYwIj8g",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Hubaib7/apna-hubaib/blob/main/part%202\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 36,
+      "metadata": {
+        "id": "95c2RF6VNUF3"
+      },
+      "outputs": [],
+      "source": [
+        "team = [\"Virat Kohli\", \"Rashid Khan\", \"Steve Smith\", \"Ben Stokes\", \"Shaheen Afridi\"]"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Cricket Team:\",team)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VsTyQsUHNnDg",
+        "outputId": "7a8986e2-60c8-4fb6-c526-392dea4fd66e"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Cricket Team: ['Virat Kohli', 'Rashid Khan', 'Steve Smith', 'Ben Stokes', 'Shaheen Afridi']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Characteristics of Lists:\n",
+        "#1. Lists are MUTABLE, meaning their contents can be changed.\n",
+        "#2. You can access elements using INDEXING.\n",
+        "#3. You can extract a part of the list using SLICING."
+      ],
+      "metadata": {
+        "id": "6BxarFnHN8DN"
+      },
+      "execution_count": 38,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# INDEXING\n",
+        "print(\"Player at Index 0:\", team[0])  # First player"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XMWPQayROlRL",
+        "outputId": "5811da90-f754-429a-aa0e-194da7178066"
+      },
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Player at Index 0: Virat Kohli\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"player at index 2:\", team[2])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YutdMS7jOnVQ",
+        "outputId": "b0639b8f-16b1-451e-bccb-7b9a23ff549c"
+      },
+      "execution_count": 40,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "player at index 2: Steve Smith\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"player at index 3:\", team[3])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WvR9VAbQO0af",
+        "outputId": "398de9d3-a7a9-4732-a9a3-8621adb23d04"
+      },
+      "execution_count": 41,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "player at index 3: Ben Stokes\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"player at index -2:\", team[-2])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "o4cfTlLiPAbd",
+        "outputId": "3aaf6981-3c8e-41be-fec9-fa98db739763"
+      },
+      "execution_count": 42,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "player at index -2: Ben Stokes\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"player at -1:\", team[-1])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "k2qOiP55PMHq",
+        "outputId": "50a8ca1e-5bf8-485f-c5dc-e715e3398400"
+      },
+      "execution_count": 43,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "player at -1: Shaheen Afridi\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Player at Index -1:\", team[-1])  # Last player"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1ktTR_1ePYks",
+        "outputId": "eef5d4d0-73c7-4622-9205-ffecac5713da"
+      },
+      "execution_count": 44,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Player at Index -1: Shaheen Afridi\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "team[2]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "F_yh7TpOPk7J",
+        "outputId": "3df42b0f-450a-4893-9944-1d2134f28831"
+      },
+      "execution_count": 45,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Steve Smith'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 45
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# MUTABILITY\n",
+        "print(\"Original Team:\", team)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fCCEWryYPpwG",
+        "outputId": "cdb7db73-383f-44d9-d014-37db6fe0023d"
+      },
+      "execution_count": 46,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Original Team: ['Virat Kohli', 'Rashid Khan', 'Steve Smith', 'Ben Stokes', 'Shaheen Afridi']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "team[4] = \"Pant\"  # Replacing \"Afridi\" with \"Pant\""
+      ],
+      "metadata": {
+        "id": "oqwMTbCEPu33"
+      },
+      "execution_count": 47,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Updated Team:\", team)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ed9p0iePPzVW",
+        "outputId": "f0eed6e6-9672-47da-d9bb-0339063dc4eb"
+      },
+      "execution_count": 48,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Updated Team: ['Virat Kohli', 'Rashid Khan', 'Steve Smith', 'Ben Stokes', 'Pant']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "team[3] = \"Hubaib\" #Replacing \"Ben Stokes\" with \"Hubaib\""
+      ],
+      "metadata": {
+        "id": "YlmSgLO6QCVa"
+      },
+      "execution_count": 49,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"updated Team:\", team)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ol7ExTYEQeMy",
+        "outputId": "1260adbb-9dc3-4e0b-98a1-074f5d643f40"
+      },
+      "execution_count": 50,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "updated Team: ['Virat Kohli', 'Rashid Khan', 'Steve Smith', 'Hubaib', 'Pant']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# SLICING\n",
+        "print(\"Top 3 Players:\", team[0:3])  # Slicing first three players"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0abRiL9MQogI",
+        "outputId": "c8113879-caca-4d9a-d583-af97fe6d4c97"
+      },
+      "execution_count": 51,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Top 3 Players: ['Virat Kohli', 'Rashid Khan', 'Steve Smith']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#step scicing\n",
+        "print(\"Classic players:\", team[0: :3])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "P5oEjr-OQxJp",
+        "outputId": "acc0d85b-7ec4-4f60-a5f8-7d7f46b4a14b"
+      },
+      "execution_count": 52,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Classic players: ['Virat Kohli', 'Hubaib']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Players from Index 2 onwards:\", team[:])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hLf4_sPxRUPN",
+        "outputId": "7acbf650-8e76-4441-c9ce-6de0f5ed231d"
+      },
+      "execution_count": 53,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Players from Index 2 onwards: ['Virat Kohli', 'Rashid Khan', 'Steve Smith', 'Hubaib', 'Pant']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "type(team)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ab3KkP5ORlzV",
+        "outputId": "fca77196-8682-4b3a-bf2f-ddd6a25c7724"
+      },
+      "execution_count": 54,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "list"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 54
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "type(team[4])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cXl3Bm-iR2VT",
+        "outputId": "c0635d03-080d-491b-a8e9-7e1a9c725ff9"
+      },
+      "execution_count": 55,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "str"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 55
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "team"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FIrQgWlgR6X7",
+        "outputId": "74a2004a-faab-423b-c9da-485945373933"
+      },
+      "execution_count": 56,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['Virat Kohli', 'Rashid Khan', 'Steve Smith', 'Hubaib', 'Pant']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 56
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "scores = [45, 70, 35, 20, 60]  # Runs scored by each player in the same order as 'team'\n",
+        "print(\"Players' Scores:\", scores)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZcBFuZykR_rK",
+        "outputId": "fbc11d86-767b-4f09-f427-c98b9b77a80a"
+      },
+      "execution_count": 57,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Players' Scores: [45, 70, 35, 20, 60]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Let's write a function to calculate the total score of the team.\n",
+        "def get_score(player_name):\n",
+        "    \"\"\"Returns the score of a player. Takes player name as a string input\"\"\" #docstring\n",
+        "    ind = team.index(player_name)\n",
+        "    player_score = [player_name, scores[ind]]\n",
+        "    return player_score"
+      ],
+      "metadata": {
+        "id": "QWJWcneiSF3I"
+      },
+      "execution_count": 58,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Using the function\n",
+        "score = get_score(\"Rashid Khan\")"
+      ],
+      "metadata": {
+        "id": "44rjifpWSNYD"
+      },
+      "execution_count": 59,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Here is the score:\\n\", score)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cfz3qKhHSSBZ",
+        "outputId": "7050549d-b66c-448c-f69b-607a1ea04567"
+      },
+      "execution_count": 60,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Here is the score:\n",
+            " ['Rashid Khan', 70]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "get_score(\"Hubaib\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TmrDFKpYSV1s",
+        "outputId": "f3f20484-8a93-4e35-bdef-2eebfda71a47"
+      },
+      "execution_count": 61,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['Hubaib', 20]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 61
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def update_score(player_name, new_score):\n",
+        "    \"\"\"Update the score of a specific player in the scores list\"\"\"\n",
+        "    ind = team.index(player_name)\n",
+        "    scores[ind] = new_score  # Mutating the list"
+      ],
+      "metadata": {
+        "id": "hxJNgcMYSd2B"
+      },
+      "execution_count": 62,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Scores before update:\", scores)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7Tt-ptjJSiuh",
+        "outputId": "d7e5fc91-e7ab-48d3-bb18-32c8b01e6c51"
+      },
+      "execution_count": 63,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Scores before update: [45, 70, 35, 20, 60]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "update_score(\"Rashid Khan\", 103)  # Updating the score of the player at index 1 (\"Rohit\")"
+      ],
+      "metadata": {
+        "id": "XQcoPGgDSnVf"
+      },
+      "execution_count": 64,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "update_score(\"Hubaib\", 156)"
+      ],
+      "metadata": {
+        "id": "9_F1vm6RSrUB"
+      },
+      "execution_count": 65,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Scores after update:\", scores)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jd0tqJycS9K_",
+        "outputId": "de355084-a68b-4f65-8ac5-7db3b75c8075"
+      },
+      "execution_count": 66,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Scores after update: [45, 103, 35, 156, 60]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Let's analyze performance using slicing\n",
+        "middle_order_scores = scores[2:4] # 2 = third player, 3\n",
+        "print(\"Middle Order Performance:\", middle_order_scores)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LITdf_qJTBH_",
+        "outputId": "9589b41e-e89e-476f-e1b0-4124098d577d"
+      },
+      "execution_count": 67,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Middle Order Performance: [35, 156]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Combining it all: Finding the highest scorer\n",
+        "highest_score = max(scores)\n",
+        "highest_scorer_index = scores.index(highest_score)\n",
+        "highest_scorer = team[highest_scorer_index]\n",
+        "\n",
+        "print(f\"\\nHighest Scorer: {highest_scorer} with {highest_score} runs!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VHpsTZUDTK5l",
+        "outputId": "b40069dc-d15c-4d7e-e5f0-6a1f1201e41a"
+      },
+      "execution_count": 68,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "Highest Scorer: Hubaib with 156 runs!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "wKzBvAjxTS1u"
+      },
+      "execution_count": 68,
+      "outputs": []
+    }
+  ]
+}
